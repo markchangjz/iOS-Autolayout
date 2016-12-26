@@ -1,6 +1,10 @@
 /*
+
 1. Auto Layout Visual Format Language Tutorial
 https://www.raywenderlich.com/110393/auto-layout-visual-format-language-tutorial
+
+2. Working with Auto Layout Visual Format Language and Programmatically Creating Constraints - AppCoda
+http://www.appcoda.com/auto-layout-programmatically/
 
 */
 
@@ -16,23 +20,23 @@ class MainTableViewController: UITableViewController {
 		viewControllers = ["Corner", "Center"]
 	}
 
-	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return viewControllers.count
 	}
 
-	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
 		cell.textLabel?.text = viewControllers[indexPath.row]
 
 		return cell
 	}
 
-	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		if indexPath.row == 0 {
 			let cornerVC = CornerViewController()
 
-			self.presentViewController(cornerVC, animated: true, completion: nil)
+			self.present(cornerVC, animated: true, completion: nil)
 		}
 		else if indexPath.row == 1 {
 			let centerVC = CenterViewController()
@@ -40,7 +44,7 @@ class MainTableViewController: UITableViewController {
 			let centerTBVC =  UITabBarController()
 			centerTBVC.viewControllers = [centerNVC]
 
-			self.presentViewController(centerTBVC, animated: true, completion: nil)
+			self.present(centerTBVC, animated: true, completion: nil)
 		}
 	}
 }
