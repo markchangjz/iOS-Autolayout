@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D06DBCA1E6C40150096316B /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D06DBC91E6C40150096316B /* StackViewController.m */; };
 		0D663FEC1D72C61B0025C7D4 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D663FEB1D72C61B0025C7D4 /* CenterViewController.swift */; };
 		0DACD4F21D68812100C01BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD4F11D68812100C01BBB /* AppDelegate.swift */; };
 		0DACD4F41D68812100C01BBB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD4F31D68812100C01BBB /* MainTableViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D06DBC71E6C40140096316B /* Layout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Layout-Bridging-Header.h"; sourceTree = "<group>"; };
+		0D06DBC81E6C40150096316B /* StackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
+		0D06DBC91E6C40150096316B /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
 		0D663FEB1D72C61B0025C7D4 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		0DACD4EE1D68812100C01BBB /* Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DACD4F11D68812100C01BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,9 +67,12 @@
 				0DACD4F31D68812100C01BBB /* MainTableViewController.swift */,
 				0DACD5031D68875500C01BBB /* CornerViewController.swift */,
 				0D663FEB1D72C61B0025C7D4 /* CenterViewController.swift */,
+				0D06DBC81E6C40150096316B /* StackViewController.h */,
+				0D06DBC91E6C40150096316B /* StackViewController.m */,
 				0DACD4F81D68812100C01BBB /* Assets.xcassets */,
 				0DACD4FA1D68812100C01BBB /* LaunchScreen.storyboard */,
 				0DACD4FD1D68812100C01BBB /* Info.plist */,
+				0D06DBC71E6C40140096316B /* Layout-Bridging-Header.h */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -142,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D06DBCA1E6C40150096316B /* StackViewController.m in Sources */,
 				0DACD4F41D68812100C01BBB /* MainTableViewController.swift in Sources */,
 				0D663FEC1D72C61B0025C7D4 /* CenterViewController.swift in Sources */,
 				0DACD4F21D68812100C01BBB /* AppDelegate.swift in Sources */,
@@ -260,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Layout/Info.plist;
@@ -267,6 +276,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.markchang.Layout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Layout/Layout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -275,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Layout/Info.plist;
@@ -282,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tw.com.markchang.Layout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Layout/Layout-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

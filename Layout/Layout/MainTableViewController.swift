@@ -17,7 +17,7 @@ class MainTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		viewControllers = ["Corner", "Center"]
+		viewControllers = ["Corner", "Center", "Stack View"]
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,10 +41,14 @@ class MainTableViewController: UITableViewController {
 		else if indexPath.row == 1 {
 			let centerVC = CenterViewController()
 			let centerNVC = UINavigationController(rootViewController: centerVC)
-			let centerTBVC =  UITabBarController()
+			let centerTBVC = UITabBarController()
 			centerTBVC.viewControllers = [centerNVC]
 
 			self.present(centerTBVC, animated: true, completion: nil)
+		}
+		else if indexPath.row == 2 {
+			let stackVC = StackViewController();
+			self.navigationController?.pushViewController(stackVC, animated: true)
 		}
 	}
 }
