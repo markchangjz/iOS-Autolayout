@@ -1,3 +1,5 @@
+// https://useyourloaf.com/blog/goodbye-spacer-views-hello-layout-guides/
+
 #import "StackViewController.h"
 
 @interface StackViewController ()
