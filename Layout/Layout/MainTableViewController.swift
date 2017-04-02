@@ -9,6 +9,8 @@ http://www.appcoda.com/auto-layout-programmatically/
 3. Auto Layout Guide_ Visual Format Language
 https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html
 
+4. Autolayout Visual Format Language - Objective C Sample Code
+http://www.knowstack.com/autolayout-visual-format-language-objective-c-sample-code/
 */
 
 import UIKit
@@ -20,7 +22,7 @@ class MainTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		viewControllers = ["Corner", "Center", "Stack View", "Basic", "Three views resizes with equal width"]
+		viewControllers = ["Corner", "Center", "Stack View", "Basic", "Three views resizes with equal width", "Three View resizes in ratio 1:2:4"]
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,6 +60,10 @@ class MainTableViewController: UITableViewController {
 		else if indexPath.row == 4 {
 			let sample1VC = Sample1ViewController();
 			self.navigationController?.pushViewController(sample1VC, animated: true)
+		}
+		else if indexPath.row == 5 {
+			let sample2VC = Sample2ViewController();
+			self.navigationController?.pushViewController(sample2VC, animated: true)
 		}
 	}
 }

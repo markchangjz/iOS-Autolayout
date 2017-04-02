@@ -5,3 +5,4 @@
 #import "StackViewController.h"
 #import "BasicViewController.h"
 #import "Sample1ViewController.h"
+#import "Sample2ViewController.h"
