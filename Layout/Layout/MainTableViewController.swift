@@ -20,7 +20,7 @@ class MainTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		viewControllers = ["Corner", "Center", "Stack View", "Basic"]
+		viewControllers = ["Corner", "Center", "Stack View", "Basic", "Three views resizes with equal width"]
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +38,6 @@ class MainTableViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		if indexPath.row == 0 {
 			let cornerVC = CornerViewController()
-
 			self.present(cornerVC, animated: true, completion: nil)
 		}
 		else if indexPath.row == 1 {
@@ -46,7 +45,6 @@ class MainTableViewController: UITableViewController {
 			let centerNVC = UINavigationController(rootViewController: centerVC)
 			let centerTBVC = UITabBarController()
 			centerTBVC.viewControllers = [centerNVC]
-
 			self.present(centerTBVC, animated: true, completion: nil)
 		}
 		else if indexPath.row == 2 {
@@ -56,6 +54,10 @@ class MainTableViewController: UITableViewController {
 		else if indexPath.row == 3 {
 			let basicVC = BasicViewController();
 			self.navigationController?.pushViewController(basicVC, animated: true)
+		}
+		else if indexPath.row == 4 {
+			let sample1VC = Sample1ViewController();
+			self.navigationController?.pushViewController(sample1VC, animated: true)
 		}
 	}
 }

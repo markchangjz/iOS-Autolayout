@@ -9,7 +9,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-	self.view.backgroundColor = [UIColor lightGrayColor];
+	self.view.backgroundColor = [UIColor whiteColor];
 
 	UIView *leftView = [[UIView alloc] init];
 	leftView.backgroundColor = [UIColor redColor];
