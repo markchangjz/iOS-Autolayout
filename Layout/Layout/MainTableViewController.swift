@@ -6,6 +6,9 @@ https://www.raywenderlich.com/110393/auto-layout-visual-format-language-tutorial
 2. Working with Auto Layout Visual Format Language and Programmatically Creating Constraints - AppCoda
 http://www.appcoda.com/auto-layout-programmatically/
 
+3. Auto Layout Guide_ Visual Format Language
+https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage.html
+
 */
 
 import UIKit
