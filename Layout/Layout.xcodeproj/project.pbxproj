@@ -12,6 +12,7 @@
 		0D93B3341E90D91100299F85 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93B3331E90D91100299F85 /* BasicViewController.m */; };
 		0D93B3371E90E76000299F85 /* Sample1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93B3361E90E76000299F85 /* Sample1ViewController.m */; };
 		0D93B33A1E90EBBB00299F85 /* Sample2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93B3391E90EBBB00299F85 /* Sample2ViewController.m */; };
+		0D93B33D1E90EECC00299F85 /* Sample3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93B33C1E90EECC00299F85 /* Sample3ViewController.m */; };
 		0DACD4F21D68812100C01BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD4F11D68812100C01BBB /* AppDelegate.swift */; };
 		0DACD4F41D68812100C01BBB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD4F31D68812100C01BBB /* MainTableViewController.swift */; };
 		0DACD4F71D68812100C01BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DACD4F51D68812100C01BBB /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 		0D93B3361E90E76000299F85 /* Sample1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample1ViewController.m; sourceTree = "<group>"; };
 		0D93B3381E90EBBB00299F85 /* Sample2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample2ViewController.h; sourceTree = "<group>"; };
 		0D93B3391E90EBBB00299F85 /* Sample2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample2ViewController.m; sourceTree = "<group>"; };
+		0D93B33B1E90EECC00299F85 /* Sample3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample3ViewController.h; sourceTree = "<group>"; };
+		0D93B33C1E90EECC00299F85 /* Sample3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample3ViewController.m; sourceTree = "<group>"; };
 		0DACD4EE1D68812100C01BBB /* Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DACD4F11D68812100C01BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DACD4F31D68812100C01BBB /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				0D93B3361E90E76000299F85 /* Sample1ViewController.m */,
 				0D93B3381E90EBBB00299F85 /* Sample2ViewController.h */,
 				0D93B3391E90EBBB00299F85 /* Sample2ViewController.m */,
+				0D93B33B1E90EECC00299F85 /* Sample3ViewController.h */,
+				0D93B33C1E90EECC00299F85 /* Sample3ViewController.m */,
 				0DACD4F81D68812100C01BBB /* Assets.xcassets */,
 				0DACD4FA1D68812100C01BBB /* LaunchScreen.storyboard */,
 				0DACD4FD1D68812100C01BBB /* Info.plist */,
@@ -173,6 +178,7 @@
 				0D93B33A1E90EBBB00299F85 /* Sample2ViewController.m in Sources */,
 				0DACD5041D68875500C01BBB /* CornerViewController.swift in Sources */,
 				0D93B3341E90D91100299F85 /* BasicViewController.m in Sources */,
+				0D93B33D1E90EECC00299F85 /* Sample3ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
