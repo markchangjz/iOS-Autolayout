@@ -23,7 +23,7 @@ class MainTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		viewControllers = ["Corner", "Center", "Stack View", "Basic", "Three views resizes with equal width", "Three view resizes in ratio 1:2:4", "Fixed size constraint & equal width"]
+		viewControllers = ["Corner", "Center", "Stack View", "Basic", "Three views resizes with equal width", "Three view resizes in ratio 1:2:4", "Fixed size constraint & equal width", "Fixed widths & center view resizes"]
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,6 +69,10 @@ class MainTableViewController: UITableViewController {
 		else if indexPath.row == 6 {
 			let sample3VC = Sample3ViewController();
 			self.navigationController?.pushViewController(sample3VC, animated: true)
+		}
+		else if indexPath.row == 7 {
+			let sample4VC = Sample4ViewController();
+			self.navigationController?.pushViewController(sample4VC, animated: true)
 		}
 	}
 }

@@ -7,3 +7,5 @@
 #import "Sample1ViewController.h"
 #import "Sample2ViewController.h"
 #import "Sample3ViewController.h"
+#import "Sample4ViewController.h"
+
