@@ -31,16 +31,26 @@
 	NSArray *horizontalConstraints =[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[redView]-20-[greenView]-20-[blueView]-20-|" options:0 metrics:nil views:views];
 	NSArray *equalWidthConstraints1 = [NSLayoutConstraint constraintsWithVisualFormat:@"[redView(==greenView)]" options:0 metrics:nil views:views];
 	NSArray *equalWidthConstraints2 = [NSLayoutConstraint constraintsWithVisualFormat:@"[greenView(==blueView)]" options:0 metrics:nil views:views];
-	NSArray *verticalConstraints1 =[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[redView]-20-|" options:0 metrics:nil views:views];
-	NSArray *verticalConstraints2 =[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[greenView]-20-|" options:0 metrics:nil views:views];
-	NSArray *verticalConstraints3 =[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-80-[blueView]-20-|" options:0 metrics:nil views:views];
 
 	[self.view addConstraints:horizontalConstraints];
 	[self.view addConstraints:equalWidthConstraints1];
 	[self.view addConstraints:equalWidthConstraints2];
-	[self.view addConstraints:verticalConstraints1];
-	[self.view addConstraints:verticalConstraints2];
-	[self.view addConstraints:verticalConstraints3];
+    
+    if (@available(iOS 11.0, *)) {
+        [redView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:20.0].active = YES;
+        [redView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:-20.0].active = YES;
+        [greenView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:20.0].active = YES;
+        [greenView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:-20.0].active = YES;
+        [blueView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:20.0].active = YES;
+        [blueView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:-20.0].active = YES;
+    } else {
+        [redView.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:20.0].active = YES;
+        [redView.bottomAnchor constraintEqualToAnchor:self.bottomLayoutGuide.topAnchor constant:-20.0].active = YES;
+        [greenView.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:20.0].active = YES;
+        [greenView.bottomAnchor constraintEqualToAnchor:self.bottomLayoutGuide.topAnchor constant:-20.0].active = YES;
+        [blueView.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor constant:20.0].active = YES;
+        [blueView.bottomAnchor constraintEqualToAnchor:self.bottomLayoutGuide.topAnchor constant:-20.0].active = YES;
+    }
 }
 
 @end
