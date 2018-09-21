@@ -74,7 +74,7 @@ class CornerViewController: UIViewController {
 		closeButton.frame.origin.y = UIScreen.main.bounds.height - closeButton.frame.height - 10
 	}
 
-	func closeButtonClicked() {
+	@objc func closeButtonClicked() {
 		self.dismiss(animated: true, completion: nil)
 	}
 }

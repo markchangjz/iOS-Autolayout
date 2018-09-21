@@ -83,7 +83,7 @@ class CenterViewController: UIViewController {
 		self.view.addConstraints(rightCenterLabelXY)
 	}
 
-	func closeButtonClicked() {
+	@objc func closeButtonClicked() {
 		self.dismiss(animated: true, completion: nil)
 	}
 }
