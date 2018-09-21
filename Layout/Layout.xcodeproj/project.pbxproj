@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D06DBCA1E6C40150096316B /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D06DBC91E6C40150096316B /* StackViewController.m */; };
 		0D663FEC1D72C61B0025C7D4 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D663FEB1D72C61B0025C7D4 /* CenterViewController.swift */; };
+		0D89DFE521550791008D6C06 /* SafeAreaBottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D89DFE421550791008D6C06 /* SafeAreaBottomViewController.swift */; };
 		0D93B3341E90D91100299F85 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93B3331E90D91100299F85 /* BasicViewController.m */; };
 		0D93B3371E90E76000299F85 /* Sample1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93B3361E90E76000299F85 /* Sample1ViewController.m */; };
 		0D93B33A1E90EBBB00299F85 /* Sample2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93B3391E90EBBB00299F85 /* Sample2ViewController.m */; };
@@ -28,6 +29,7 @@
 		0D06DBC81E6C40150096316B /* StackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
 		0D06DBC91E6C40150096316B /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
 		0D663FEB1D72C61B0025C7D4 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		0D89DFE421550791008D6C06 /* SafeAreaBottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaBottomViewController.swift; sourceTree = "<group>"; };
 		0D93B3321E90D91100299F85 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		0D93B3331E90D91100299F85 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		0D93B3351E90E76000299F85 /* Sample1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample1ViewController.h; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				0D93B33F1E90F12500299F85 /* Sample4ViewController.m */,
 				0D93B3411E90F3F500299F85 /* RotateViewController.h */,
 				0D93B3421E90F3F500299F85 /* RotateViewController.m */,
+				0D89DFE421550791008D6C06 /* SafeAreaBottomViewController.swift */,
 				0DACD4F81D68812100C01BBB /* Assets.xcassets */,
 				0DACD4FA1D68812100C01BBB /* LaunchScreen.storyboard */,
 				0DACD4FD1D68812100C01BBB /* Info.plist */,
@@ -185,6 +188,7 @@
 				0D93B3401E90F12500299F85 /* Sample4ViewController.m in Sources */,
 				0D06DBCA1E6C40150096316B /* StackViewController.m in Sources */,
 				0DACD4F41D68812100C01BBB /* MainTableViewController.swift in Sources */,
+				0D89DFE521550791008D6C06 /* SafeAreaBottomViewController.swift in Sources */,
 				0D663FEC1D72C61B0025C7D4 /* CenterViewController.swift in Sources */,
 				0DACD4F21D68812100C01BBB /* AppDelegate.swift in Sources */,
 				0D93B33A1E90EBBB00299F85 /* Sample2ViewController.m in Sources */,
