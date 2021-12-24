@@ -23,7 +23,7 @@ class MainTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		viewControllers = ["Corner", "Center", "Stack View", "Basic", "Three views resizes with equal width", "Three view resizes in ratio 1:2:4", "Fixed size constraint & equal width", "Fixed widths & center view resizes", "Rotate", "Safe Area - Bottom View"]
+		viewControllers = ["Corner", "Center", "Stack View", "Basic", "Three views resizes with equal width", "Three view resizes in ratio 1:2:4", "Fixed size constraint & equal width", "Fixed widths & center view resizes", "Rotate", "Safe Area - Bottom View", "Layout Guide"]
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,6 +81,10 @@ class MainTableViewController: UITableViewController {
         else if indexPath.row == 9 {
             let safeAreaBottomVC = SafeAreaBottomViewController()
             navigationController?.pushViewController(safeAreaBottomVC, animated: true)
+        }
+        else if indexPath.row == 10 {
+            let layoutGuideVC = LayoutGuideViewController()
+            navigationController?.pushViewController(layoutGuideVC, animated: true)
         }
 	}
 }

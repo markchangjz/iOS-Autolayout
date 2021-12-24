@@ -22,6 +22,7 @@
 		0DACD4F91D68812100C01BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DACD4F81D68812100C01BBB /* Assets.xcassets */; };
 		0DACD4FC1D68812100C01BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DACD4FA1D68812100C01BBB /* LaunchScreen.storyboard */; };
 		0DACD5041D68875500C01BBB /* CornerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACD5031D68875500C01BBB /* CornerViewController.swift */; };
+		0DC259612775F6DB00F7D880 /* LayoutGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC259602775F6DA00F7D880 /* LayoutGuideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		0DACD4FB1D68812100C01BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DACD4FD1D68812100C01BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DACD5031D68875500C01BBB /* CornerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerViewController.swift; sourceTree = "<group>"; };
+		0DC259602775F6DA00F7D880 /* LayoutGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutGuideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0D93B3411E90F3F500299F85 /* RotateViewController.h */,
 				0D93B3421E90F3F500299F85 /* RotateViewController.m */,
 				0D89DFE421550791008D6C06 /* SafeAreaBottomViewController.swift */,
+				0DC259602775F6DA00F7D880 /* LayoutGuideViewController.swift */,
 				0DACD4F81D68812100C01BBB /* Assets.xcassets */,
 				0DACD4FA1D68812100C01BBB /* LaunchScreen.storyboard */,
 				0DACD4FD1D68812100C01BBB /* Info.plist */,
@@ -188,6 +191,7 @@
 				0D93B3401E90F12500299F85 /* Sample4ViewController.m in Sources */,
 				0D06DBCA1E6C40150096316B /* StackViewController.m in Sources */,
 				0DACD4F41D68812100C01BBB /* MainTableViewController.swift in Sources */,
+				0DC259612775F6DB00F7D880 /* LayoutGuideViewController.swift in Sources */,
 				0D89DFE521550791008D6C06 /* SafeAreaBottomViewController.swift in Sources */,
 				0D663FEC1D72C61B0025C7D4 /* CenterViewController.swift in Sources */,
 				0DACD4F21D68812100C01BBB /* AppDelegate.swift in Sources */,
