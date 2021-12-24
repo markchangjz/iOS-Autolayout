@@ -64,7 +64,7 @@ class CornerViewController: UIViewController {
 		// Close Button
 		closeButton.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
 		closeButton.backgroundColor = UIColor.black
-		closeButton.setTitle("Close", for: UIControlState())
+		closeButton.setTitle("Close", for: UIControl.State())
 		closeButton.addTarget(self, action:#selector(self.closeButtonClicked), for: .touchUpInside)
 		self.view.addSubview(closeButton)
 	}

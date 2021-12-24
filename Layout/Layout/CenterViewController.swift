@@ -16,7 +16,7 @@ class CenterViewController: UIViewController {
 		let topCenterLabelWidth = NSLayoutConstraint.constraints(withVisualFormat: "H:[topCenterLabel(100)]", options: [], metrics: nil, views: ["topCenterLabel": topCenterLabel])
 		let topCenterLabelHeight = NSLayoutConstraint.constraints(withVisualFormat: "V:[topCenterLabel(50)]", options: [], metrics: nil, views: ["topCenterLabel": topCenterLabel])
 		let topCenterLabelX = NSLayoutConstraint(item: topCenterLabel, attribute: .centerX, relatedBy: .equal, toItem: topCenterLabel.superview, attribute: .centerX, multiplier: 1.0, constant: 0.0)
-		let topCenterLabelY = NSLayoutConstraint.constraints(withVisualFormat: "V:[topLayoutGuide]-30-[topCenterLabel]", options: [], metrics: nil, views: ["topCenterLabel": topCenterLabel, "topLayoutGuide": topLayoutGuide])
+		let topCenterLabelY = NSLayoutConstraint.constraints(withVisualFormat: "V:|-30-[topCenterLabel]", options: [], metrics: nil, views: ["topCenterLabel": topCenterLabel])
 
 		self.view.addConstraints(topCenterLabelWidth)
 		self.view.addConstraints(topCenterLabelHeight)
@@ -47,7 +47,7 @@ class CenterViewController: UIViewController {
 		let bottomCenterLabelWidth = NSLayoutConstraint.constraints(withVisualFormat: "H:[bottomCenterLabel(100)]", options: [], metrics: nil, views: ["bottomCenterLabel": bottomCenterLabel])
 		let bottomCenterLabelHeight = NSLayoutConstraint.constraints(withVisualFormat: "V:[bottomCenterLabel(50)]", options: [], metrics: nil, views: ["bottomCenterLabel": bottomCenterLabel])
 		let bottomCenterLabelX = NSLayoutConstraint(item: bottomCenterLabel, attribute: .centerX, relatedBy: .equal, toItem: topCenterLabel.superview, attribute: .centerX, multiplier: 1.0, constant: 0.0)
-		let bottomCenterLabelY = NSLayoutConstraint.constraints(withVisualFormat: "V:[bottomCenterLabel]-30-[bottomLayoutGuide]|", options: [], metrics: nil, views: ["bottomCenterLabel": bottomCenterLabel, "bottomLayoutGuide": bottomLayoutGuide])
+        let bottomCenterLabelY = NSLayoutConstraint.constraints(withVisualFormat: "V:[bottomCenterLabel]-30-|", options: [], metrics: nil, views: ["bottomCenterLabel": bottomCenterLabel])
 
 		self.view.addConstraints(bottomCenterLabelWidth)
 		self.view.addConstraints(bottomCenterLabelHeight)
